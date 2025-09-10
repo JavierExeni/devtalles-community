@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+/* TailwindCSS config */
 @import "tailwindcss";
 
+@theme {
+    --font-sans: "Noto Sans JP", sans-serif;
+}
+
+/* DaisyUI config */
 @plugin "daisyui" {
     themes: light --default;
 }
-
 @plugin "daisyui/theme" {
     name: "light";
     default: true;
-    /* set as default */
 
     --color-base-100: #1A0D2E;
     --color-base-200: #25163F;
@@ -29,4 +35,8 @@
     --color-warning-content: #1A0D2E;
     --color-error: #EF4444;
     --color-error-content: oklch(98% 0.003 247.858);
+}
+
+[data-theme="light"] {
+  font-family: var(--font-sans);
 }
