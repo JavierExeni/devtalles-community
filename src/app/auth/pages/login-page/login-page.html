@@ -1,1 +1,98 @@
-<p>login-page works!</p>
+<div class="h-screen grid place-content-center px-10 sm:p-0">
+    <div class="card card-border border-base-300 bg-base-100 min-w-[300px] max-w-96 shadow-sm">
+        <figure>
+            <img class="w-[150px] pt-6" src="images/DEVI HELLO BORDER.svg" alt="devi_hello_border" />
+        </figure>
+        <div class="card-body">
+            <h2 class="card-title">Bienvenido de nuevo 👋</h2>
+            <p class="text-sm font-light">Ingresa a tu cuenta para descubrir, compartir y aprender junto a la comunidad
+                DevTalles.</p>
+
+            <form class="flex flex-col gap-6 mt-5">
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-light tracking-wide">Email</label>
+                    <label class="input input-border">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                                stroke="currentColor">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </g>
+                        </svg>
+                        <input type="email" class="placeholder:text-gray-500" placeholder="mail@site.com" required />
+                    </label>
+                    <div class="validator-hint hidden">Enter valid email address</div>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-light tracking-wide">
+                        Password
+                    </label>
+                    <label class="input input-border">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                                stroke="currentColor">
+                                <path
+                                    d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z">
+                                </path>
+                                <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            </g>
+                        </svg>
+                        <input type="password" class="placeholder:text-gray-500" required placeholder="Password"
+                            title="Must be more than 8 characters, including number, lowercase letter, uppercase letter" />
+                    </label>
+                </div>
+
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center justify-between text-sm">
+                    <div class="flex items-center">
+
+                        <label class="label">
+                            <input type="checkbox" checked="checked" class="checkbox" />
+                            Recuerdame
+                        </label>
+                    </div>
+                    <a class="link font-light">
+                        ¿Olvidaste la <span class="text-base-content font-medium">contraseña</span>?
+                    </a>
+
+                </div>
+
+                <div class="card-actions">
+                    <button class="btn btn-primary">Iniciar Sesión</button>
+                </div>
+            </form>
+
+            <div class="divider"> O conéctate a través de </div>
+            <div class="flex justify-center items-center">
+                <button
+                    class="flex items-center bg-[#5865F2] rounded-lg shadow-md px-6 py-2 text-sm font-medium text-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+
+                    <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px"
+                        viewBox="0 -28.5 256 256" version="1.1" preserveAspectRatio="xMidYMid">
+                        <g>
+                            <path
+                                d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"
+                                fill="#FFFFFF" fill-rule="nonzero">
+
+                            </path>
+                        </g>
+                    </svg>
+
+                    <span>Connect with Discord</span>
+
+                </button>
+            </div>
+
+
+            <p class="font-light text-center mt-6 mb-2">
+                ¿No tienes una cuenta?
+                <a class="link link-hover text-base-content font-medium">
+                    Registrate
+                </a>
+            </p>
+        </div>
+    </div>
+
+</div>
