@@ -1,15 +1,75 @@
 <!-- Navbar -->
 <dt-navbar></dt-navbar>
-<header>
-  <nav>
-    DevPosts
+<main class="lg:max-w-[80%] m-auto">
+  <section class="text-center py-40 m-auto">
+    <div class="badge badge-primary text-base p-4">Lee nuestro blog</div>
+    <h1 class="text-wrap text-5xl font-bold mt-5 mb-9">
+      Aprende, Comparte y Conecta con la Comunidad DevTalles
+    </h1>
+    <p class="text-2xl">
+      Un espacio para publicar, descubrir y debatir ideas que impulsan tu crecimiento como
+      desarrollador.
+    </p>
+  </section>
 
+  <section class="grid grid-cols-[auto_1fr] gap-10">
+    <div class="card card-border border-base-300 bg-base-100 shadow-sm p-6">
+      <form class="flex flex-col gap-6 text-base">
+        <fieldset>
+          <label class="input">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="grow" placeholder="Búscar" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label class="input">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+              </g>
+            </svg>
+            <input type="text" class="grow" placeholder="Filtrar" />
+          </label>
+        </fieldset>
 
-  </nav>
-</header>
-
-<section>
-    <router-outlet />
-</section>
+        <fieldset class="mt-2">
+          <p class="text-primary font-semibold mb-3">Búsca por categoría</p>
+          <ul class="text-base">
+            <li class="px-3 py-4 font-semibold border-l-4 border-l-primary">Todas las Categorias</li>
+            <li class="px-3 py-4 border-l-4 border-l-gray-200/40">UI/UX Design</li>
+            <li class="px-3 py-4 border-l-4 border-l-gray-200/40">Machine Learning</li>
+            <li class="px-3 py-4 border-l-4 border-l-gray-200/40">Marketing</li>
+            <li class="px-3 py-4 border-l-4 border-l-gray-200/40">Gaming</li>
+            <li class="px-3 py-4 border-l-4 border-l-gray-200/40">Design</li>
+            <li class="px-3 py-4 border-l-4 border-l-gray-200/40">Janitor</li>
+            <li class="px-3 py-4 border-l-4 border-l-gray-200/40">Another One</li>
+            <li class="px-3 py-4 border-l-4 border-l-gray-200/40">Human Resources</li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+    <div>
+      <router-outlet />
+    </div>
+  </section>
+</main>
 
 <!-- Footer -->
