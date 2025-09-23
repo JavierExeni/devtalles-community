@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'dt-navbar',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './dt-navbar.html',
   styles: ``
 })
