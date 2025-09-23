@@ -1,13 +1,16 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-    {
-        path: 'auth',
-        loadChildren: () => import('./auth/auth.routes')
-    },
-    {
-        path: '',
-        loadChildren: () => import('./community-front/community-front.routes')
-    },
-
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.routes'),
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.routes'),
+  },
+  {
+    path: '',
+    loadChildren: () => import('./community-front/community-front.routes'),
+  },
 ];
